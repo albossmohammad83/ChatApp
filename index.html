@@ -203,6 +203,15 @@ button:hover {
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F7BJLBSRK0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-F7BJLBSRK0');
+  </script>
   <script>
 const socket = new WebSocket('ws://3.136.181.27');
 const chatOutput = document.getElementById('chat-output');
