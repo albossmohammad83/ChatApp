@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Chat App</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">  
   <style>
-    body {
+/* Adjust the styles for iPad screens and smaller */
+
+  body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f9f9f9;
   display: flex;
@@ -16,7 +19,7 @@
 
 #phone-frame {
   border-radius: 15px;
-  width: 560px; /* Adjust the width as needed */
+  width: 660px; /* Adjust the width as needed */
   height: 840px; /* Adjust the height as needed */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -178,6 +181,11 @@ button:hover {
   background-color: #0b7dda;
 }
 
+@media (max-width: 1024px) {
+  #phone-frame {
+    width: 97%;
+  }
+}
   </style>
 </head>
 <body>
